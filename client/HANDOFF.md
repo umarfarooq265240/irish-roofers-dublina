@@ -64,3 +64,17 @@ email (empty on purpose), logo (HTML wordmark placeholder + `public/sites/irishr
 ## REVISION ROUND 2 (supersedes "NEXT = step 10")
 The owner sent a long feedback list on 2026-11-20 plus new colours (primary #3ef43e, secondary #10161d) and 123 client Google photos. Plan and findings: `client/REVISION-2.md`. Do Parts A, B, C there one at a time (stop and report after each), then step 10 (GitHub-ready). Photos review (done): all 123 are ~200 px thumbnails, so reference only.
 Owner answers received (email info@irishroofers.ie, offices, director Patrick, logo, partner logos, CIF and RCCA membership): see the end of `client/REVISION-2.md`; assets in `client/assets/`. Parts A and B done. Part C blocked on image quota (see end of client/REVISION-2.md for the resume steps).
+
+## 2026-11-24: preview sent to the client (deadline day)
+- Committed everything as `346b220` ("first preview") on `master`. No GitHub remote yet: the user creates the repo and pushes, then imports it in Vercel (framework: Next.js, default settings; `npm run build` passes, static export).
+- Kept out of git (`.gitignore`): `*.env`/`.env*` keys (`cloudef.env`, `.env.local`), `docs/research/`, `docs/design-references/` (AM copyright), `client/photos/`, `client/assets/`, `client/*.har` (may hold cookies), `client/*.html`, `client/*.zip`, `client/*.pdf`, `client/screenshots-mobile/`, `images/`, the saved Google Maps folder.
+- Git identity set for this repo only (user.name "Usman").
+- Mobile preview for the client: `client/Irish-Roofers-Dublin-mobile-preview.pdf` (home + 7 navbar pages at 390px, full page, cookie bar/sticky CTA hidden) and PNGs in `client/screenshots-mobile/`. Script: scratchpad `shots-pdf.js` (serves `out/` on port 3199).
+
+### Still to do after the client sees the preview
+1. Client feedback on the Vercel link: collect it into a new `client/REVISION-5.md`.
+2. Part C of `client/REVISION-2.md` (blocked on image quota) and anything open in `REVISION-3.md` / `REVISION-4-OLD-SITE-AUDIT.md`.
+3. Step 10 cleanup: delete unused AM assets in `public/sites/amroofing/` (move fonts to `sites/irishroofers/fonts` first), rename `components/sites/amroofing` to a neutral name, write the README.
+4. Desktop check (only mobile was reviewed for this preview).
+5. Connect the real domain in Vercel and set `site.seo.url` to the final domain (sitemap, canonicals, schema use it).
+6. Client TODOs listed above (social links, years trading, real project photos, full review texts, price confirmation, policy review).

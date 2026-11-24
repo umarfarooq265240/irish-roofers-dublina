@@ -63,3 +63,5 @@ client/assets/
 client/*.har
 client/*.html
 client/*.zip
+client/screenshots-mobile/
+client/*.pdf
