@@ -1,0 +1,166 @@
+import type { Article } from "../types";
+
+const D = "2026-11-18";
+
+// TODO(client): have the client read and approve these articles, especially cost figures, before publishing.
+export const articles: Article[] = [
+  {
+    slug: "how-much-does-a-new-roof-cost-in-dublin",
+    title: "How much does a new roof cost in Dublin?",
+    excerpt: "Typical price ranges for a new tiled or slate roof on Dublin houses, and what moves the price up or down.",
+    published: D,
+    updated: D,
+    body: [
+      { type: "p", text: "A full re-roof on a typical three-bedroom semi-detached house in Dublin usually costs several thousand euro, and the final figure depends on the roof size, pitch, covering and access. This guide explains what drives the price so you can judge a quote." },
+      { type: "h2", text: "What is a typical price for a new roof in Dublin?" },
+      { type: "p", text: "As a rough guide, a concrete-tile re-roof on a typical semi-detached house often falls between about €8,000 and €14,000 including scaffold, felt, battens and tiles. Clay tile and natural slate cost more. These are guide prices only: every roof is different, and we give a firm written quote after a free inspection." },
+      { type: "h2", text: "What changes the price?" },
+      { type: "ticks", items: [
+        { lead: "Roof size and pitch.", text: "More area and steeper slopes mean more materials and labour." },
+        { lead: "The covering.", text: "Concrete tile is usually cheapest, then clay tile, then natural slate." },
+        { lead: "Complexity.", text: "Hips, valleys, dormers and chimneys add cutting, lead work and time." },
+        { lead: "Access and scaffold.", text: "Tall houses and tight sites cost more to scaffold." },
+        { lead: "Repairs to timber.", text: "Rotten battens or rafters found once the old roof is off need to be fixed." },
+      ] },
+      { type: "h2", text: "Do I need a whole new roof or a repair?" },
+      { type: "p", text: "Not always. A few slipped tiles or a crumbling ridge is usually a repair. Widespread cracked tiles, sagging, failed felt or repeated leaks point to a replacement. An honest inspection tells you which, and we show you photographs." },
+      { type: "note", text: "Guide prices only. Call 086 050 8558 for a free inspection and a written quote." },
+    ],
+    faqs: [
+      { q: "How much does a new roof cost for a semi-detached house in Dublin?", a: "A concrete-tile re-roof on a typical three-bedroom semi often falls between about €8,000 and €14,000. Clay tile and slate cost more. These are guides only and we quote firmly after a free inspection." },
+      { q: "Does a new roof add value to my house?", a: "A sound roof helps a sale go smoothly and avoids survey problems, but the value depends on the market. It is more about protecting the house than adding a set figure." },
+      { q: "How long does a re-roof take?", a: "A typical house usually takes about a week, depending on size and weather." },
+    ],
+  },
+  {
+    slug: "slate-vs-tile-roofs-in-ireland",
+    title: "Slate or tile: which roof is better for an Irish home?",
+    excerpt: "How natural slate, fibre-cement slate, concrete tile and clay tile compare on cost, lifespan and look.",
+    published: D,
+    updated: D,
+    body: [
+      { type: "p", text: "Slate and tile can both give a long-lasting roof in the Irish climate. The right choice depends on your house, your budget and how long you plan to stay." },
+      { type: "h2", text: "What are the main differences between slate and tile?" },
+      { type: "table", head: ["Covering", "Typical lifespan", "Cost", "Best for"], rows: [
+        ["Natural slate", "60 to 100+ years", "Highest", "Period homes and long-term owners"],
+        ["Fibre-cement slate", "30 to 40 years", "Medium", "Slate look on a smaller budget"],
+        ["Clay tile", "50 to 80 years", "High", "Period character and colour retention"],
+        ["Concrete tile", "30 to 50 years", "Lowest", "Most modern houses and estates"],
+      ], note: "Lifespans are typical ranges and depend on installation, exposure and maintenance." },
+      { type: "h2", text: "Which suits Irish weather best?" },
+      { type: "p", text: "All of them cope with Irish rain when fitted correctly. What matters is a good underlay, correct headlap and sound battens. Exposed coastal and hilltop sites need tight fixings because of wind." },
+      { type: "h2", text: "Can I change from tile to slate?" },
+      { type: "p", text: "Often yes, but slate is lighter in some cases and heavier in others, so the roof structure should be checked. Conservation areas and protected structures may have rules, so check with your local authority." },
+    ],
+    faqs: [
+      { q: "Is slate better than tile?", a: "Natural slate usually lasts longest and suits period houses, but costs more. Concrete tile is a sound, economical choice for most modern houses." },
+      { q: "Do concrete tiles need maintenance?", a: "They need occasional checks of ridges, verges and moss. Repointing ridges and replacing cracked tiles keeps them going." },
+    ],
+  },
+  {
+    slug: "signs-you-need-a-roof-repair",
+    title: "Seven signs you need a roof repair",
+    excerpt: "The early warning signs of a failing roof, and what to do before a small problem becomes a leak.",
+    published: D,
+    updated: D,
+    body: [
+      { type: "p", text: "Most roof problems start small. Spotting them early means a quick, inexpensive repair instead of damp, stained ceilings and interior damage." },
+      { type: "h2", text: "What are the signs your roof needs repair?" },
+      { type: "ticks", items: [
+        { lead: "Slipped, cracked or missing tiles or slates.", text: "Look from the ground or take a photo with zoom." },
+        { lead: "Crumbling ridge mortar.", text: "Bits of mortar in the gutter are a giveaway." },
+        { lead: "Stains on the ceiling.", text: "Brown rings, especially after heavy rain." },
+        { lead: "Daylight in the attic.", text: "Light coming through means water can too." },
+        { lead: "Sagging or ponding.", text: "On flat roofs, standing water after rain shows a problem." },
+        { lead: "Damp or mould.", text: "Musty smells or patches on upstairs walls and ceilings." },
+        { lead: "Granules in the gutters.", text: "Old concrete tiles shed their surface as they age." },
+      ] },
+      { type: "h2", text: "What should I do first?" },
+      { type: "p", text: "Do not climb onto the roof. Take photographs from the ground, check your attic for damp, and call a roofer for a free inspection. If water is coming in now, call us on 086 050 8558 and we will arrange temporary waterproofing." },
+    ],
+    faqs: [
+      { q: "How often should I have my roof checked?", a: "Once a year and after major storms is a sensible rule." },
+      { q: "Is a small leak urgent?", a: "Yes, because water travels and can damage insulation, timber and ceilings. A quick repair is far cheaper than repairing the damage later." },
+    ],
+  },
+  {
+    slug: "how-long-does-a-flat-roof-last-in-ireland",
+    title: "How long does a flat roof last in the Irish climate?",
+    excerpt: "Lifespans of EPDM, GRP, felt and asphalt flat roofs in Irish weather, and how to make them last.",
+    published: D,
+    updated: D,
+    body: [
+      { type: "p", text: "Irish weather is hard on flat roofs: frequent rain, little drying time and shaded sites. Material and installation matter more than age alone." },
+      { type: "h2", text: "How long does each type of flat roof last?" },
+      { type: "table", head: ["Material", "Typical lifespan in Ireland"], rows: [
+        ["EPDM rubber", "20 to 30 years"],
+        ["GRP fibreglass", "20 to 30 years"],
+        ["Torch-on felt", "10 to 20 years"],
+        ["Mastic asphalt", "25 to 40 years"],
+      ], note: "Typical ranges only. Poor detailing or ponding water can halve them." },
+      { type: "h2", text: "What shortens a flat roof's life?" },
+      { type: "ticks", items: [
+        { text: "Water ponding because of poor falls or blocked outlets" },
+        { text: "Failed upstands and flashings at walls and rooflights" },
+        { text: "Foot traffic and debris, such as leaves or moss" },
+        { text: "Cheap materials or poor workmanship" },
+      ] },
+      { type: "h2", text: "How can I make a flat roof last longer?" },
+      { type: "p", text: "Keep gullies and outlets clear, remove moss and debris, and have the roof checked once a year. A small repair when a seam lifts is much cheaper than replacing the roof." },
+    ],
+    faqs: [
+      { q: "Can a flat roof be repaired rather than replaced?", a: "Often yes. Splits, failed seals and small areas of damage can be repaired. Widespread failure or a rotten deck means replacement." },
+      { q: "Is EPDM better than felt?", a: "EPDM usually lasts longer and has fewer seams, so it is a popular choice for extensions." },
+    ],
+  },
+  {
+    slug: "why-is-my-chimney-leaking",
+    title: "Why is my chimney leaking? Common causes and fixes",
+    excerpt: "Failed flashing, cracked flaunching, crumbling mortar and open pots: how to tell what is letting water in.",
+    published: D,
+    updated: D,
+    body: [
+      { type: "p", text: "Chimneys are exposed on every side, so they are one of the commonest places for water to get into a house." },
+      { type: "h2", text: "What causes a chimney to leak?" },
+      { type: "ticks", items: [
+        { lead: "Failed flashing.", text: "The lead or mortar where the stack meets the roof cracks or lifts." },
+        { lead: "Cracked flaunching.", text: "The mortar around the pot lets water run into the stack." },
+        { lead: "Crumbling brickwork.", text: "Old mortar joints and weathered bricks absorb water." },
+        { lead: "Open or missing cowls.", text: "Rain enters the flue and shows as damp on the chimney breast." },
+      ] },
+      { type: "h2", text: "How do I know which one it is?" },
+      { type: "p", text: "Stains on the chimney breast usually mean water down the flue or through the brick, while stains on the ceiling beside the stack often mean flashing. A roofer checks all of these from a cherry picker." },
+      { type: "h2", text: "What does chimney repair cost?" },
+      { type: "p", text: "Common repairs such as flashing or flaunching often start from around €300, and larger repointing is quoted after inspection." },
+    ],
+    faqs: [
+      { q: "Can I fix a chimney leak myself?", a: "Working at height is risky, and a wrong repair can trap water. We recommend a roofer." },
+      { q: "Is a leaking chimney an emergency?", a: "If water is coming into the house, yes. We can arrange temporary waterproofing quickly." },
+    ],
+  },
+  {
+    slug: "what-to-do-after-storm-damage-to-your-roof",
+    title: "What to do after storm damage to your roof",
+    excerpt: "A calm, step-by-step guide for the hours and days after a storm, including safety, photos and insurance.",
+    published: D,
+    updated: D,
+    body: [
+      { type: "p", text: "Irish winter storms regularly lift slates and tiles, loosen ridges and damage chimneys. Here is what to do and in what order." },
+      { type: "h2", text: "What should I do first after a storm?" },
+      { type: "ticks", items: [
+        { text: "Keep everyone away from the damaged area and any fallen debris." },
+        { text: "Do not climb onto the roof or use a ladder in wind." },
+        { text: "Photograph the damage from the ground and inside the attic." },
+        { text: "Move belongings away from leaks and catch drips." },
+      ] },
+      { type: "h2", text: "Who should I call?" },
+      { type: "p", text: "Call a roofer to make the roof safe and weathertight. We are open 24 hours on 086 050 8558 and can arrange temporary waterproofing quickly, then a permanent repair a few days later." },
+      { type: "h2", text: "What about insurance?" },
+      { type: "p", text: "Contact your insurer promptly, keep your photographs and any receipts, and ask what documentation they need. We can provide photographs of the damage on request." },
+    ],
+    faqs: [
+      { q: "Is storm damage usually covered by home insurance?", a: "Many policies cover storm damage, but terms vary. Check your policy and contact your insurer." },
+      { q: "How soon can you attend?", a: "We are open 24 hours and prioritise active leaks." },
+    ],
+  },
+];

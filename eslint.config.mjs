@@ -12,6 +12,11 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Downloaded source-site scripts kept only as research evidence.
+    "docs/research/**",
+    // Node helper scripts used for cloning (CommonJS, run outside the app).
+    "scripts/clone-tools/**",
+    "scripts/*.js",
   ]),
 ]);
 

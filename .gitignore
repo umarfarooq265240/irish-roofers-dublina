@@ -47,3 +47,19 @@ next-env.d.ts
 
 # Local temp files
 temp/
+
+# secret keys (any *.env file)
+*.env
+
+# local-only: research of the reference site, raw client material, saved pages
+docs/research/
+docs/design-references/
+Irish_Roofers_Dublin*/
+images/
+client/photos/
+client/assets/
+.env*
+!.env.example
+client/*.har
+client/*.html
+client/*.zip
